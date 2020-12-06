@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('template_title')
-    Create Ronandagon
+    Добавить новый водител
 @endsection
 
 @section('content')
@@ -13,7 +13,7 @@
 
                 <div class="card card-default">
                     <div class="card-header">
-                        <span class="card-title">Create Ronandagon</span>
+                        <span class="card-title"> Добавить новый водител</span>
                     </div>
                     <div class="card-body">
                         <form method="POST" action="{{ route('ronandagon.store') }}"  role="form" enctype="multipart/form-data">

@@ -13,12 +13,12 @@
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 
                             <span id="card_title">
-                                {{ __('Autobusho') }}
+                                {{ __('Автобусы') }}
                             </span>
 
                              <div class="float-right">
                                 <a href="{{ route('autobusho.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
-                                  {{ __('Create New') }}
+                                  {{ __('Добавить') }}
                                 </a>
                               </div>
                         </div>
@@ -34,12 +34,12 @@
                             <table class="table table-striped table-hover">
                                 <thead class="thead">
                                     <tr>
-                                        <th>No</th>
+                                        <th>№</th>
 
-										<th>Raqam</th>
-										<th>Model</th>
-										<th>Joi Nishast</th>
-										<th>Tashkilot Id</th>
+										<th>Номер</th>
+										<th>Модель</th>
+										<th>Количество мест</th>
+										<th>Организация</th>
 
                                         <th></th>
                                     </tr>

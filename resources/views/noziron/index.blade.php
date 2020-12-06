@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('template_title')
-    Noziron
+    Диспетчеры
 @endsection
 
 @section('content')
@@ -13,12 +13,12 @@
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 
                             <span id="card_title">
-                                {{ __('Noziron') }}
+                                {{ __('Диспетчеры') }}
                             </span>
 
                              <div class="float-right">
                                 <a href="{{ route('noziron.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
-                                  {{ __('Create New') }}
+                                  {{ __('Добавить') }}
                                 </a>
                               </div>
                         </div>
@@ -34,12 +34,12 @@
                             <table class="table table-striped table-hover">
                                 <thead class="thead">
                                     <tr>
-                                        <th>No</th>
+                                        <th>№</th>
 
-										<th>Nomu Nasab</th>
-										<th>Soli Tavallud</th>
-										<th>Raghami Telefon</th>
-										<th>User Id</th>
+										<th>ФИО</th>
+										<th>Дата рождения</th>
+										<th>Номер телефона</th>
+										<th>ID пользователя</th>
 
                                         <th></th>
                                     </tr>
@@ -56,11 +56,11 @@
 
                                             <td>
                                                 <form action="{{ route('noziron.destroy',$noziron->id) }}" method="POST">
-                                                    <a class="btn btn-sm btn-primary " href="{{ route('noziron.show',$noziron->id) }}"><i class="fa fa-fw fa-eye"></i> Show</a>
-                                                    <a class="btn btn-sm btn-success" href="{{ route('noziron.edit',$noziron->id) }}"><i class="fa fa-fw fa-edit"></i> Edit</a>
+                                                    <a class="btn btn-sm btn-primary " href="{{ route('noziron.show',$noziron->id) }}"><i class="fa fa-fw fa-eye"></i> </a>
+                                                    <a class="btn btn-sm btn-success" href="{{ route('noziron.edit',$noziron->id) }}"><i class="fa fa-fw fa-edit"></i> </a>
                                                     @csrf
                                                     @method('DELETE')
-                                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Delete</button>
+                                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> </button>
                                                 </form>
                                             </td>
                                         </tr>
@@ -70,7 +70,7 @@
                         </div>
                     </div>
                 </div>
-                {!! $noziron->links() !!}
+{{--                {!! $noziron->links() !!}--}}
             </div>
         </div>
     </div>

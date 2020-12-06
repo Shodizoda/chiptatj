@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Noziron;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 /**
@@ -32,7 +33,9 @@ class NozironController extends Controller
     public function create()
     {
         $noziron = new Noziron();
-        return view('noziron.create', compact('noziron'));
+        $users = User::pluck('name', 'id');
+
+        return view('noziron.create', compact('noziron', 'users'));
     }
 
     /**
@@ -45,6 +48,7 @@ class NozironController extends Controller
     {
         request()->validate(Noziron::$rules);
 
+        $request->get('user_id', '1');
         $noziron = Noziron::create($request->all());
 
         return redirect()->route('noziron.index')

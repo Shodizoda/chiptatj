@@ -13,12 +13,12 @@
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 
                             <span id="card_title">
-                                {{ __('Khatsayrho') }}
+                                {{ __('Машрути') }}
                             </span>
 
                              <div class="float-right">
                                 <a href="{{ route('khatsayrho.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
-                                  {{ __('Create New') }}
+                                  {{ __('Добавить новый') }}
                                 </a>
                               </div>
                         </div>
@@ -34,19 +34,20 @@
                             <table class="table table-striped table-hover">
                                 <thead class="thead">
                                     <tr>
-                                        <th>No</th>
+                                        <th>№</th>
 
-										<th>Nom</th>
-										<th>Az Kujo</th>
-										<th>Ba Kujo</th>
-										<th>Masofa</th>
-										<th>Vaqti Raftan</th>
-										<th>Vaqti Rasidan</th>
-										<th>Vaqti Bargashtan</th>
-										<th>Autobus Id</th>
-										<th>Ronanda Id</th>
-										<th>Nozir Id</th>
-										<th>Khatsayr Status Id</th>
+										<th>ФИО</th>
+										<th>От куда</th>
+										<th>Куда</th>
+										<th>Расстояние</th>
+										<th>Время отправки</th>
+										<th>
+                                            Время прыбития</th>
+										<th>Время возвращения</th>
+										<th>Автобус Id</th>
+										<th>Водитель Id</th>
+										<th>Диспетчер Id</th>
+										<th>Статус машрута</th>
 
                                         <th></th>
                                     </tr>

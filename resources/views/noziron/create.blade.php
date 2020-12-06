@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('template_title')
-    Create Noziron
+    Добавить диспетчер
 @endsection
 
 @section('content')
@@ -13,7 +13,7 @@
 
                 <div class="card card-default">
                     <div class="card-header">
-                        <span class="card-title">Create Noziron</span>
+                        <span class="card-title"> Добавить диспетчер</span>
                     </div>
                     <div class="card-body">
                         <form method="POST" action="{{ route('noziron.store') }}"  role="form" enctype="multipart/form-data">
